@@ -1,0 +1,6 @@
+{
+  "provider": "groq",
+  "model": "llama-3.1-8b-instant",
+  "exclude": ["node_modules", "dist", ".git", "*.test.ts"],
+  "output": { "docs_dir": "./docs", "save_reports": false }
+}

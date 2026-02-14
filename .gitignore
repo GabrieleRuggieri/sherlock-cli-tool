@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets (never commit API keys)
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Generated documentation (when running Sherlock on this repo)
+DOCS.md
+BUGS.md
+
+# Logs & temp
+*.log
+npm-debug.log*
+.npm
+.turbo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Bun
+.bun/

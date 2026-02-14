@@ -1,0 +1,14 @@
+{
+  "provider": "ollama",
+  "model": "llama3.2",
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".git",
+    "*.test.ts"
+  ],
+  "output": {
+    "docs_dir": "./docs",
+    "save_reports": true
+  }
+}
