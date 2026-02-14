@@ -13,14 +13,13 @@
 3. [Tech Stack](#3-tech-stack)
 4. [Features](#4-features)
 5. [Architecture](#5-architecture)
-6. [Roadmap](#6-roadmap)
-7. [Project Structure](#7-project-structure)
-8. [Installation & Setup](#8-installation--setup)
-9. [Usage](#9-usage)
-10. [Configuration](#10-configuration)
-11. [Contributing](#11-contributing)
-12. [Limitations & Known Issues](#12-limitations--known-issues)
-13. [Future Ideas](#13-future-ideas)
+6. [Project Structure](#6-project-structure)
+7. [Installation & Setup](#7-installation--setup)
+8. [Usage](#8-usage)
+9. [Configuration](#9-configuration)
+10. [Contributing](#10-contributing)
+11. [Limitations & Known Issues](#11-limitations--known-issues)
+12. [Future Ideas](#12-future-ideas)
 
 ---
 
@@ -168,45 +167,7 @@ No single file does more than one thing. Each module is independently testable.
 
 ---
 
-## 6. Roadmap
-
-### Phase 1 — Foundation (Weeks 1–2)
-
-The goal is a working tool as fast as possible. By the end of this phase, you can point the tool at a repo and get a generated README.
-
-- [ ] Project setup: TypeScript, Bun, Commander, basic Ink TUI.
-- [ ] Indexer: scans a directory, reads files, filters by `.gitignore`.
-- [ ] AI Bridge: basic call to AI provider API, returns text.
-- [ ] First mode: **Docs** — generates a README from the codebase.
-- [ ] Basic TUI: menu to select mode, spinner while processing, output display.
-
-### Phase 2 — Depth (Weeks 3–4)
-
-Structural analysis and the Bugs mode.
-
-- [ ] Context Builder: selects relevant files based on the active mode, not the whole repo.
-- [ ] **Bugs** mode: analyzes code for common issues, produces a structured report.
-- [ ] TUI improvements: severity coloring in the bug report, file/line navigation.
-
-### Phase 3 — Interactivity (Weeks 5–6)
-
-The tool becomes a full interactive experience.
-
-- [ ] **Map** mode: dependency graph rendered as text, git-based file stats.
-- [ ] **Ask** mode: interactive Q&A on the codebase with streaming responses.
-- [ ] Configuration file support (`.codeopsrc`): set provider, excluded paths, output preferences.
-- [ ] Output saving: export docs and bug reports directly to files in the repo.
-
-### Phase 4 — Polish (Week 7)
-
-Production-ready quality.
-
-- [ ] Error handling: graceful failures for API errors, file system issues, unsupported file types.
-- [ ] Documentation: complete README, inline code comments, usage examples.
-
----
-
-## 7. Project Structure
+## 6. Project Structure
 
 ```
 sherlock-cli-tool/
@@ -236,7 +197,7 @@ sherlock-cli-tool/
 
 ---
 
-## 8. Installation & Setup
+## 7. Installation & Setup
 
 ### Prerequisites
 
@@ -267,7 +228,7 @@ bun run start
 
 ---
 
-## 9. Usage
+## 8. Usage
 
 ### Interactive mode (default)
 
@@ -304,7 +265,7 @@ bun run start --path /path/to/your/repo
 
 ---
 
-## 10. Configuration
+## 9. Configuration
 
 Sherlock looks for a `.codeopsrc` file in the root of the target repository.
 
@@ -333,7 +294,7 @@ Sherlock looks for a `.codeopsrc` file in the root of the target repository.
 
 ---
 
-## 11. Contributing
+## 10. Contributing
 
 Contributions are welcome. Here's how to get started:
 
@@ -350,7 +311,7 @@ Contributions are welcome. Here's how to get started:
 
 ---
 
-## 12. Limitations & Known Issues
+## 11. Limitations & Known Issues
 
 - **AI accuracy is not guaranteed.** The tool uses AI to generate documentation and detect bugs. Output should always be reviewed by a developer before being committed.
 - **Large repos can be slow.** The indexer scans and reads every file on each run.
@@ -359,7 +320,7 @@ Contributions are welcome. Here's how to get started:
 
 ---
 
-## 13. Future Ideas
+## 12. Future Ideas
 
 These are not on the current roadmap but represent natural next steps if the project evolves:
 
